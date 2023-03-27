@@ -49,7 +49,7 @@ export default function App() {
               <img className="gif" src="home-gif.gif" alt="explained gif" />
             </div>
           </div>
-          <ListComponent address={address} />
+          {address ? <ListComponent address={address} /> : null}
           <Web3Modal
             projectId={projectId}
             ethereumClient={ethereumClient}
